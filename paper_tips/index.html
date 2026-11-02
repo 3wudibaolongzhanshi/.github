@@ -64,10 +64,6 @@
 </li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../bib_reference_guide/">Latex文献引用编译办法</a>
-</li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../env_conf/">搭建自定义开发环境</a>
 </li>
 </ul>
@@ -106,8 +102,6 @@
 </ul>
 <p class="caption"><span class="caption-text">工具与资源</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../introduction/">模拟器演示：涉水效果</a>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/">开源工具列表</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../blender/">三维建模软件 Blender 介绍</a>
@@ -117,6 +111,8 @@
 </ul>
 <p class="caption"><span class="caption-text">学习与论文</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../bib_reference_guide/">Latex文献引用编译办法</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../undergraduate/">本科毕业设计</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../paper/avf/">论文成果：AVF-BEL 视听融合</a>
@@ -452,7 +448,7 @@ You can also round numbers, for example <span class="k">\num</span><span class="
 <li>所有文中的符号都是公式符号，而不是英文</li>
 <li>latex 编译生成中间文件（ <em>.aux, </em>.log等）和输出pdf文件不用放到仓库</li>
 <li>一次性不要提交太多文件，不好审核，提交前检查下，比如大的二进制文件可以提供一个下载链接</li>
-<li>缓存、输出文件必须要放到仓库，比如：__pycache__不需要的缓存文件、训练的模型、中间记录文件、.pyc文件、checkpoint文件、<em>.pth文件最多放一个、</em>.npy文件等</li>
+<li>缓存、不必要的输出文件不要放到仓库，比如：__pycache__不需要的缓存文件、训练的模型、中间记录文件、.pyc文件、checkpoint文件、<em>.pth文件最多放一个、</em>.npy文件等</li>
 </ul>
 <h2 id="其他">其他</h2>
 <ul>
@@ -468,12 +464,18 @@ You can also round numbers, for example <span class="k">\num</span><span class="
 <li><a href="https://tool.yovisun.com/scihub/">论文下载工具 sci-hub</a></li>
 </ul>
 <p>补充提示：插图导出后请检查文字、线条和图例是否清晰，再放入论文正文。</p>
-<p>导出后可先打开 PDF 检查文字是否清晰、图例是否完整，再查看 PNG 在最终版心宽度下的显示效果。若图片来自脚本，建议同时保留脚本和导出的文件名，后续修改数据时更容易重新生成同一张图。</p></div>
+<p>导出后可先打开 PDF 检查文字是否清晰、图例是否完整，再查看 PNG 在最终版心宽度下的显示效果。若图片来自脚本，建议同时保留脚本和导出的文件名，后续修改数据时更容易重新生成同一张图。</p>
+<h2 id="插图放入正文后的检查">插图放入正文后的检查</h2>
+<ul>
+<li>按正文中的实际宽度查看图片，确认坐标刻度、图例和注释能直接读清，不只检查放大后的效果。</li>
+<li>导出整篇 PDF 后重新检查图像边缘，确认标题、单位和图例没有被裁切，图号与正文引用相符。</li>
+<li>涉及多条曲线时，检查线型、标记和颜色是否容易区分；打印成灰度后也应能对应到图例。</li>
+</ul></div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
 <a class="btn btn-neutral float-left" href="../CONTRIBUTING/" title="贡献指南"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-<a class="btn btn-neutral float-right" href="../bib_reference_guide/" title="Latex文献引用编译办法">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral float-right" href="../env_conf/" title="搭建自定义开发环境">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
 <div role="contentinfo">
@@ -493,7 +495,7 @@ You can also round numbers, for example <span class="k">\num</span><span class="
 <a class="fa fa-github" href="https://github.com/OpenHUTB/.github" style="color: #fcfcfc"> GitHub</a>
 </span>
 <span><a href="../CONTRIBUTING/" style="color: #fcfcfc">« Previous</a></span>
-<span><a href="../bib_reference_guide/" style="color: #fcfcfc">Next »</a></span>
+<span><a href="../env_conf/" style="color: #fcfcfc">Next »</a></span>
 </span>
 </div>
 <script src="../js/jquery-3.6.0.min.js"></script>
